@@ -14,6 +14,7 @@ const {
 describe('counter', () => {
  it('should return a function', () => {
    expect(typeof counter()).toBe('function');
+   expect(typeof counter()()).toBe('number');
  });
  it('should return 1 when the returned function is invoked', () => {
    expect(counter()()).toBe(1);
