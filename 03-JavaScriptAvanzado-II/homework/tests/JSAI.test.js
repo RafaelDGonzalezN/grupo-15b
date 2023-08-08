@@ -82,6 +82,7 @@ describe('Bind', function() {
  it('should return the correct name "Juan"', function() {
    expect(getNombreAlumno()).toEqual('Juan');
  });
+ 
  it('should return the correct string "*Hola*"', function() {
    expect(textoAsteriscos('Hola')).toEqual('*Hola*');
  });

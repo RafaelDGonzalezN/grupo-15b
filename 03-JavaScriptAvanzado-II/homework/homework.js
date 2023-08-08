@@ -120,8 +120,6 @@ function crearCadena(delimitadorIzquierda, delimitadorDerecha, cadena) {
     return delimitadorIzquierda + cadena + delimitadorDerecha;
 }
 
-
-console.log('aca this global', this);
 let textoAsteriscos = crearCadena.bind(null, '*', '*' );
 let textoGuiones = crearCadena.bind(null, '-', '-');
 let textoUnderscore = crearCadena.bind(null, '_', '_');
