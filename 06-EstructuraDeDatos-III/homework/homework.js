@@ -94,7 +94,6 @@ BinarySearchTree.prototype.depthFirstForEach = function (cb, order) {
          right && right.depthFirstForEach(cb, "in-order");
       },
    }
-   cases[order]
    cases[order || "in-order"](this.left, this.right, cb, this.value)
 
 // opcion 1 con if
