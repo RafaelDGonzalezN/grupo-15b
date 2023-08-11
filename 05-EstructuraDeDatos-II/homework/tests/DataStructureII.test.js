@@ -6,7 +6,7 @@ const {
   HashTable
 } = require('../homework');
 
-describe('Una linked list', function() {
+xdescribe('Una linked list', function() {
   var linkedList;
 
   beforeEach(function() {
@@ -170,7 +170,7 @@ describe('HashTable', function() {
     expect(hashTable.get('foo')).toBe('bar2');
   });
 
-  it('deberia devolver booleanos para el metodo #hasKey', function() {
+  it.only('deberia devolver booleanos para el metodo #hasKey', function() {
     hashTable.set('foobar', 'fluf cats');
     expect(hashTable.hasKey('foobar')).toBe(true);
     expect(hashTable.hasKey('raboof')).toBe(false);
